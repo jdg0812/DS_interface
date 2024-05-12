@@ -29,6 +29,10 @@ def user_home():
     username = request.form['username']
     return(render_template('home.html', username=username))
 
+@app.route('/checkin')
+def checkin():
+    return(render_template('checkin.html'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
