@@ -1,11 +1,22 @@
 from flask import Flask, render_template, request
+from google.cloud import bigquery
 
 
 
 app = Flask(__name__)
 
+# client = bigquery.Client()
+
+
 @app.route('/')
 def index():
+
+    # query = """
+    #     SELECT * FROM 'insert table name here'
+    # """
+    # query_job = client.query(query)
+    # results = query_job.result()
+
     return(render_template('index.html'))
 
 @app.route('/login')

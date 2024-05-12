@@ -17,13 +17,26 @@
     <table> 
         <tr>
             <th>Flight ID</th>
-
             <th>Departure</th>
             <th>Destination</th>
             <th>Departure Time</th>
             <th>Arrival Time</th>
             <th>Flight Status</th>
         </tr>
+
+        <!-- {% for row in data %} -->
+        <tr>
+            <td>{{ row.Flight_ID }}</td>
+            <td>{{ row.Departure_airport }}</td>
+            <td>{{ row.Destination_airport }}</td>
+            <td>{{ row.Departure_Time }}</td>
+            <td>{{ row.Arrival_Time }}</td>
+            <td>{{ row.Flight_Status }}</td>
+
+
+        </tr>
+
+        <!-- {% endfor %} -->
 
     </table>
    
